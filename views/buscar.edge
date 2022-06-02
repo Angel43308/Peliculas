@@ -1,0 +1,12 @@
+@layout('layouts.app')
+
+@section('content')
+
+<form method="POST" action="/buscar">
+        <div class="form-group">
+            <label for="">¿Qué quieres buscar?</label>
+            <input type="text" class="form-control" name="buscar" placeholder="Ingresa tu busqueda">
+            <button>Buscar</button>
+        </div>
+</form>
+        @endsection

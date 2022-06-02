@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Repositorio Pelis</title>
+</head>
+<body>
+    <script>const peli=require('peliculas')</script>
+    <nav class="navbar navbar-expand-jg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sistema de control para el repositorio de peliculas</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-3 offset-9">
+                <a href="/ingresar" class="btn btn-primary text-right">Ingresar pelicula</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-3 offset-9">
+                <a href="/buscar" class="btn btn-primary text-right">Buscar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-sm-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">NOMBRE</th>
+                        <th scope="col">PROTAGONISTA</th>
+                        <th scope="col">AÑO</th>
+                        <th scope="col">SINOPSIS</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <th  scope="row">1 </th>
+                        <td> EndGame</td>
+                        <td> Chespirito </td>
+                        <td> 2021</td>
+                        <td>sdjvhfklasndlvaño</td>
+                    <td> 
+                        <button class="btn btn-success text-right"> Editar </button>
+                        <button class="btn btn-danger text-right"> Borrar</button>
+
+                    </td>
+                    </tr>
+                    <tr>
+                        <pre>
+                            <script>peli</script>
+                        </pre>
+                            <button class="btn btn-success text-right">Editar
+                            </button>
+                            <button class="btn btn-danger text-right">Borrar
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+<!--javascript-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha-q8i/X+965DzO0rT7abk41JStQIAqVgRVzpdzo5smXKp4YfRvH+8abtTE1P6jiza" crossoring="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-OU2eT0CpHqdSJQhJty5KVphtphzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0Pp3pXB1rRibZUAYoIIy6OrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+<script src="/index.js"></script>
+
+
+
+
+
+</body>
+</html>

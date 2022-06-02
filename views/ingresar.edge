@@ -1,0 +1,31 @@
+@layout('layouts.app')
+
+@section('content')
+
+        <form method="POST" action="/agregar">
+                    <div class="form-group">
+                        <label for="">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" placeholder="Ingresa nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Protagonista</label>
+                        <input type="text" class="form-control" name="protagonista" placeholder="Ingresa nombres">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Año</label>
+                        <input type="text" class="form-control" name="año" placeholder="Ingresa año">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Sinopsis</label>
+                        <input type="text" class="form-control" name="sinopsis" placeholder="De que trata...">
+                    </div>
+
+                    <button class="btn btn-primary">Agregar</button>
+
+                </form>
+
+@endsection
+

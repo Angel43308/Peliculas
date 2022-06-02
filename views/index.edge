@@ -1,0 +1,44 @@
+@layout('layouts.app')
+
+@section('content')
+<div class="row mt-5">
+            <div class="col-3 offset-9">
+                <a href="/ingresar" class="btn btn-primary text-right">Ingresar pelicula</a>
+                <a href="/buscar" class="btn btn-primary text-right">Buscar</a>
+            </div>
+        </div>
+
+
+        <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">NOMBRE</th>
+                        <th scope="col">PROTAGONISTA</th>
+                        <th scope="col">AÑO</th>
+                        <th scope="col">SINOPSIS</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+            
+                @each(pelis in peliculas)
+                    <tr>
+
+                        <th>{{pass._id}} </th>
+                        <td>{{pass.nombre}}</td>
+                        <td>{{pass.protagonista}} </td>
+                        <td>{{pass.año}}</td>
+                        <td>{{pass.sinopsis}}</td>
+                    <td> 
+                        <button class="btn btn-success text-right"> Editar </button>
+                        <button class="btn btn-danger text-right"> Borrar</button>
+
+                        </td>
+                    </tr>
+                    @endeach
+                </tbody>
+            </table>
+
+@endsection
+
